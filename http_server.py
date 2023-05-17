@@ -46,6 +46,7 @@ def get_guides_by_domain(domain):
         return jsonify({"message": "No guides found for the specified domain"}), 404
 @app.route('/guides', methods=['GET'])
 def get_guides():
+    print("here")
     guides = guides_collection.find({"_id": False})
     guides_list = list(guides)
     if guides_list:
