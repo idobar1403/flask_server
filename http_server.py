@@ -46,4 +46,4 @@ def get_guides_by_domain(domain):
         return jsonify({"message": "No guides found for the specified domain"}), 404
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port = 5000, debug=True)

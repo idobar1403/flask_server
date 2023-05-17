@@ -175,3 +175,16 @@ Werkzeug==2.1.2
 wrapt==1.14.1
 xgboost==1.3.3
 zipp @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_b279673d-f037-44c7-8773-c5a6b6f51037d3wfr9cq/croots/recipe/zipp_1652341773612/work
+blinker==1.6.2
+click==8.1.3
+dnspython==2.3.0
+Flask==2.3.2
+Flask-Cors==3.0.10
+importlib-metadata==6.6.0
+itsdangerous==2.1.2
+Jinja2==3.1.2
+MarkupSafe==2.1.2
+pymongo==4.3.3
+six==1.16.0
+Werkzeug==2.3.4
+zipp==3.15.0
