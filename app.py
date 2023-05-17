@@ -44,6 +44,7 @@ def get_guides_by_domain(domain):
         return jsonify(guides_list)
     else:
         return jsonify({"message": "No guides found for the specified domain"}), 404
+    
 @app.route('/guides', methods=['GET'])
 def get_guides():
     print("here")
@@ -53,6 +54,15 @@ def get_guides():
         return jsonify(guides_list)
     else:
         return jsonify({"message": "No guides found for the specified domain"}), 404
+
+@app.route('/domains', methods=['GET'])
+def get_domains():
+    domains = []  # Initialize an empty list to store the domains
+    # Assuming you have a collection or data source containing the guides
+    # Retrieve all distinct domains from the collection
+    distinct_domains = guides_collection.distinct("domain")
+    domains = list(distinct_domains)  # Convert the distinct_domains to a list
+    return jsonify(domains)
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port = 5000, debug=True)
