@@ -43,6 +43,7 @@ def insert_request_guide():
     except Exception as e:
         traceback.print_exc()
         return jsonify({"message": "An error occurred"}), 500
+
 # define a route to insert a new request
 @app.route('/guide', methods=['POST'])
 def insert_guide():
